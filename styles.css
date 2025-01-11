@@ -1,0 +1,73 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 卡片容器样式 */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* 允许卡片换行 */
+    gap: 20px; /* 卡片之间的间距 */
+    justify-content: center; /* 居中对齐 */
+    margin: 0 auto; /* 居中容器 */
+    padding: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 卡片 hover 效果 */
+.card:hover {
+    transform: scale(1.05); /* 放大卡片 */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* 增强阴影 */
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+.card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.card .stars {
+    font-size: 18px;
+    color: gold;
+}
+
+.card.light {
+    background-color: #ffffff;
+}
+
+.card.dark {
+    background: linear-gradient(135deg, #4a6fa5, #9375d5);
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card.dark h3, .card.dark p, .card.dark a {
+    color: #ffffff;
+}
